@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  #frente{
+    width: auto;
+      margin-top: 25px;
+      position: absolute;
+      height: 200px;
+      background-color: #0ff3;
+      margin-left: 978px;
+      float: left;
+      cursor: pointer;
+  }
+
+  #volta{
+      width: auto;
+      margin-top: 25px;
+      position: absolute;
+      height: 200px;
+      background-color: #0ff3;
+      cursor: pointer;
+  }
+
+  #div1{
+    width: 1000px;
+    height: 300px;
+    border: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+ 
+ #dvload{
+   width: 100%;
+   height: 5px;
+   margin-top: 25%;
+   border: 1px solid rgba(255,255,255,0.3);
+ }
+
+ #dvbarra{
+   width: 0%;
+   height: 100%;
+   background-color:white;
+ }
+</style>
+
+<body>
+
+<div id="div1">
+  <button id="volta" onclick="Troca(-1)"><</button>
+  <button id="frente" onclick="Troca(+1)">></button>
+  <div id="dvload">
+    <div id="dvbarra"></div>
+  </div>
+</div>
+
+
+
+<script src="SliderCFB.js"></script>
+</body>
+</html>
